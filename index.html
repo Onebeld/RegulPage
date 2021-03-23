@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Regul</title>
+    <script type="text/javascript" src="assets/js/translate.js"></script>
+    <script type="text/javascript">
+        var userLang = window.navigator.language.slice(0, 2) || navigator.userLanguage.slice(0, 2);
+        console.log(userLang);
+        switch (userLang){
+            case 'ru':
+                break;
+            default:
+                userLang = 'en'
+                break;
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo"><img id="imageLogo" src="assets/svg/Logo.svg"><img id="textLogo" src="assets/svg/Text.svg"></a>
+
+            <ul>
+                <li><a class="button" href="https://github.com/Onebeld/Regul">GitHub</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textLeft">
+                <div>
+                    <h1><script>document.write(translateStrings[userLang]['ARevolutionarySolution'])</script></h1>
+                    <p><script>document.write(translateStrings[userLang]['Description1'])</script></p>
+                </div>
+
+                <img class="screenshots imgRight" src="assets/imgs/screen1.png">
+            </div>
+            <div>
+                <h1 style="text-align: center;"><script>document.write(translateStrings[userLang]['Module'])</script></h1>
+                <img style="display: block; margin-left: auto; margin-right: auto; margin-top: 25px; margin-bottom: 25px; max-width: 60%;" class="screenshots" src="assets/imgs/screen2.png">
+                <p style="text-align: center;"><script>document.write(translateStrings[userLang]['Description2'])</script></p>
+                <a class="button" style="max-width: 500px; margin-top: 20px; text-align: center; margin-left: auto; margin-right: auto; display: block;" href="https://modthesims.info/d/652440/"><script>document.write(translateStrings[userLang]['ToLearnMore'])</script></a>
+            </div>
+        </div>
+        <footer>
+            <h4>&#169;2020-2021 Dmitry Zhutkov (Onebeld)</h4>
+
+            <img id="onebeld" src="assets/svg/onebeld.svg">
+        </footer>
+    </section>
+
+    <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".button") ,
+        {
+            max: 10,
+            speed: 150
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".screenshots") ,
+        {
+            max: 5,
+            speed: 150
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+    color: white;
+}
+body::before
+{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background: magenta;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.1);
+}
+
+footer #onebeld
+{
+    position: relative;
+    display: flex;
+    width: 200px;
+    filter: invert();
+    transition: 0.1s;
+}
+
+.logo
+{
+    display: flex;
+}
+.content
+{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content div
+{
+    margin-bottom: 50px;
+}
+.screenshots:hover
+{
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+.textLeft
+{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.imgRight
+{
+    margin-left: 50px;
+    max-width: 50%;
+}
+.button
+{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+.button:hover
+{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.button:active
+{
+    transition: 0.1s;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale();
+}
+
+#imageLogo
+{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+#textLogo
+{
+    width: 100px;
+    margin-left: 5px;
+    filter: invert();
+}
